@@ -1,70 +1,37 @@
-# IoT Hub Sentinel
+# IOT HUB SENTINEL
 
-> **A sentinel-style interface for monitoring and controlling connected systems.**
+![IOT HUB SENTINEL cinematic hero](https://capsule-render.vercel.app/api?type=rect&color=0:070707,100:171717&height=230&text=IOT%20HUB%20SENTINEL&fontColor=F3F3EE&fontSize=40&fontAlignY=38&desc=CONNECTED%20SYSTEM%20SECURITY&descColor=999991&descSize=12&descAlignY=66&animation=twinkling)
 
-[![Built with React](https://img.shields.io/badge/React-18-111111?style=flat-square&logo=react&logoColor=white)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-111111?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Vite](https://img.shields.io/badge/Vite-Frontend-111111?style=flat-square&logo=vite&logoColor=white)](https://vite.dev/)
+> **CONNECTED SYSTEM SECURITY.**
 
----
+## THE PREMISE
 
-## Overview
+IoT Hub Sentinel explores the operational layer around connected devices: a command-oriented dashboard where presence, state and system health can be understood without digging through implementation details.
 
-IoT Hub Sentinel is a frontend prototype exploring operational dashboards for IoT environments, with a focus on clear status visibility, responsive interaction, and extensible data flows.
+## THE EXPERIENCE
 
-The repository is maintained by **K. Kishor Kumar** as part of an evolving portfolio of software, AI, IoT and product-engineering experiments.
+**Turn device noise into hierarchy.**  \n**Keep operational state visible.**  \n**Leave room for realtime data when the system grows.**
 
-## Highlights
+## THE SYSTEM
 
-- IoT operations dashboard patterns
-- Device/state-oriented UI
-- Responsive component system
-- Real-time-ready client architecture
+React/TypeScript provides the application surface; Framer Motion handles motion, Supabase and Socket.IO keep the data layer extensible, and Recharts supports telemetry-style views.
 
-## Technology
+## THE STACK
 
 React 18 · TypeScript · Vite · Tailwind CSS · shadcn/ui · Framer Motion · Supabase · Socket.IO · Recharts
 
-## Project Status
+## RUN
+
+```bash
+npm install\nnpm run dev
+```
+
+## PROJECT STATE
 
 **Prototype / active development**
 
-This README intentionally documents the project at the repository level. Implementation details are kept aligned with the codebase as the project evolves.
-
-## Local Development
-
-```bash
-git clone https://github.com/Kishordiu/iot-hub-sentinel.git
-cd <project-directory>
-npm install
-npm run dev
-```
-
-Production build:
-
-```bash
-npm run build
-npm run preview
-```
-
-Run the test suite when available:
-
-```bash
-npm run test
-```
-
-## Repository Principles
-
-- Keep secrets and local environment files out of source control.
-- Prefer small, reusable components over duplicated UI.
-- Keep documentation synchronized with the implementation.
-- Preserve third-party license notices where required.
-
-## Author
-
-**K. Kishor Kumar**  
-GitHub: [@Kishordiu](https://github.com/Kishordiu)
+The repository documents the capabilities that are actually implemented; future integrations are intentionally separated from the current product surface.
 
 ---
 
-<p align="center">Built with curiosity, iteration, and engineering discipline.</p>
+<p align="center"><strong>K. KISHOR KUMAR</strong><br><sub>ENGINEERING / PRODUCT / SYSTEMS</sub></p>
