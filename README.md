@@ -10,7 +10,9 @@ IoT Hub Sentinel explores the operational layer around connected devices: a comm
 
 ## THE EXPERIENCE
 
-**Turn device noise into hierarchy.**  \n**Keep operational state visible.**  \n**Leave room for realtime data when the system grows.**
+**Turn device noise into hierarchy.**  
+**Keep operational state visible.**  
+**Leave room for realtime data when the system grows.**
 
 ## THE SYSTEM
 
