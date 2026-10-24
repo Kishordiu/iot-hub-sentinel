@@ -41,7 +41,7 @@ React · TypeScript · Vite · React Router · Framer Motion · typed API wrappe
 git clone https://github.com/Kishordiu/iot-hub-sentinel.git
 cd iot-hub-sentinel
 npm ci
-cp .env.example .env
+# Create a local .env file and set VITE_API_URL to your actual API base URL.
 ```
 
 Set `VITE_API_URL` to the intended API base URL in the local environment file, then run:
