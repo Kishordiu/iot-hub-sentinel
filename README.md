@@ -2,51 +2,61 @@
 
 # IOT HUB SENTINEL
 
-> **CONNECTED SYSTEM SECURITY.**
+**A connected-device dashboard frontend that separates the operator experience from its API service.**
 
-## THE PREMISE
+IoT Hub Sentinel provides a React/TypeScript application for showing device inventory, status summaries, alerts, and device details. Its dashboard loads data through the API wrappers in `src/services/endpoints`. The UI reports a connection error when the backend is unavailable or `VITE_API_URL` is not configured.
 
-IoT Hub Sentinel explores the operational layer around connected devices: a command-oriented dashboard where presence, state and system health can be understood without digging through implementation details.
+## Request path
 
-## THE EXPERIENCE
-
-**Turn device noise into hierarchy.**  
-**Keep operational state visible.**  
-**Leave room for realtime data when the system grows.**
-
-## THE SYSTEM
-
-React/TypeScript provides the application surface; Framer Motion handles motion, Supabase and Socket.IO keep the data layer extensible, and Recharts supports telemetry-style views.
-
-## THE STACK
-
-React 18 · TypeScript · Vite · Tailwind CSS · shadcn/ui · Framer Motion · Supabase · Socket.IO · Recharts
-
-## RUN
-
-Requirements: Node.js and npm.
-
-```bash
-npm ci
-npm run dev
+```text
+Dashboard / device pages
+          │
+          ▼
+src/services/endpoints
+          │
+          ▼
+Configured API (VITE_API_URL)
+          │
+          ├──► Dashboard statistics
+          ├──► Device records
+          └──► Alert records
 ```
 
-Vite prints the development URL. Before shipping, run:
+## What is included
+
+- **Operational dashboard:** Device totals and status/alert summaries returned by the API.
+- **Device detail:** A route for examining an individual device record.
+- **Account screens:** Login and password-reset interface routes.
+- **Loading and error states:** The dashboard distinguishes a pending request from an unavailable backend.
+
+## Stack
+
+React · TypeScript · Vite · React Router · Framer Motion · typed API wrappers
+
+## Run locally
+
+**Requirements:** Node.js and npm.
 
 ```bash
-npm run build
+git clone https://github.com/Kishordiu/iot-hub-sentinel.git
+cd iot-hub-sentinel
+npm ci
+cp .env.example .env
+```
+
+Set `VITE_API_URL` to the intended API base URL in the local environment file, then run:
+
+```bash
+npm run dev
 npm run lint
 npm test
+npm run build
 ```
 
-This is a prototype interface; connected-device security enforcement must be verified in the backend and device firmware, not inferred from UI states.
+## Backend and security boundary
 
-## PROJECT STATE
-
-**Prototype / active development**
-
-The repository documents the capabilities that are actually implemented; future integrations are intentionally separated from the current product surface.
+This repository is the frontend; a successful UI build does not mean a device backend is running. Confirm API authentication, authorization, input validation, event provenance, tenant isolation, and the handling of secrets on the server. Do not treat sample/empty API responses as evidence that a real device is online or secure.
 
 ---
 
-<p align="center"><strong>K. KISHOR KUMAR</strong><br><sub>ENGINEERING / PRODUCT / SYSTEMS</sub></p>
+<p align="center"><sub>DIU FOUNDRY · CONNECTED SYSTEMS / API-DRIVEN OPERATIONS</sub></p>
