@@ -1,5 +1,7 @@
 ![IOT HUB SENTINEL — bespoke brushed-metal project artwork](./assets/readme-metal-hero.svg)
 
+# IOT HUB SENTINEL
+
 > **CONNECTED SYSTEM SECURITY.**
 
 ## THE PREMISE
