@@ -1,6 +1,4 @@
-# IOT HUB SENTINEL
-
-![IOT HUB SENTINEL cinematic hero](https://capsule-render.vercel.app/api?type=rect&color=0:070707,100:171717&height=230&text=IOT%20HUB%20SENTINEL&fontColor=F3F3EE&fontSize=40&fontAlignY=38&desc=CONNECTED%20SYSTEM%20SECURITY&descColor=999991&descSize=12&descAlignY=66&animation=twinkling)
+![IOT HUB SENTINEL — bespoke brushed-metal project artwork](./assets/readme-metal-hero.svg)
 
 > **CONNECTED SYSTEM SECURITY.**
 
